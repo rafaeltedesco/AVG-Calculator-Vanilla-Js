@@ -1,5 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 26px;
+  font-family: Helvetica;
+}
+
+h1 {
+  background-color: crimson;
+  color: white;
+  padding: 10px;
+}
+
 .toggle {
   visibility: hidden;
 }
 
+.delete {
+  background-color:rgb(241, 45, 45); border-radius:5px;
+  margin: -10px;
+  padding: 10px;
+  color:white;
+  cursor: pointer;
+  float:right;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+li {
+  padding: 30px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+}
+
+p {
+  padding: 30px;
+  line-height: 1.5rem;
+}
+
+.red {
+  color: #e0244f
+}
+
+.blue {
+  color: #285d9e;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 5px;
+
+}
+
+#initialInputsDiv {
+  text-align: center;
+  margin: 20px;
+
+}
+
+input {
+  padding:10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding:1rem;
+  background-color: #08485f;
+  color: #fff;
+}
 

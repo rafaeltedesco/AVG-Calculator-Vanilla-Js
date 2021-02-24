@@ -23,7 +23,7 @@ function updateN(){
  
 }
 
-inputGrade.addEventListener('change', function() {
+inputGrade.addEventListener('keyup', function() {
   if (this.value && !registering) {
     toggleBtn(btnAddGrade)
   }
@@ -131,5 +131,6 @@ function reset() {
   inputGrade.disabled = false
   inputGrade.focus()
   showGrades()
+  updateN()
 
 }

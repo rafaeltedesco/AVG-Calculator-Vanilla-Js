@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div>
+      <h1>Calculadora de Média</h1>
+      <hr>
+    </div>
+    <div>
+      <label for="grade">Digite a <span id="nGrade"> </span> nota:</label>
+      <input type="number" id="grade" name="grade" />
+      <button disabled id="btnAddGrade" onClick="addGrade()">Adicionar Nota</button>
+      <button disabled id="btnCalcAvg" onClick="calcAvg()">Calcular Média</button>
+      <button disabled id="btnReset" onClick="reset()">Reset</button>
+    </div>
+     <div id="divErr" class="toggle">
+      <p id="pErr"></p>
+    </div> 
+    
+    <div id="divGrades" class="toggle">
+      <h2>Notas</h2>
+      <hr>
+      <ul id="ulGrades"></ul>
+    </div>
+    <div id="divAvg" class="toggle">
+      <h2>Média</h2>
+      <hr>
+     <p id="pAvg"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

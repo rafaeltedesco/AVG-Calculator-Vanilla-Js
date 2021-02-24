@@ -102,9 +102,14 @@ function showAvg() {
     pAvg.classList.add('red')
     message = 'Reprovado!'
   }
+  divAvg.scrollIntoView({
+    behavior: 'smooth'
+  })
+  
   setTimeout(()=> {
       pAvg.innerHTML += `<br>Você foi ${message}`
-    }, 1000)
+      
+    }, 1500)
   
 }
 

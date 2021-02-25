@@ -24,17 +24,26 @@ function updateN(){
 }
 
 inputGrade.addEventListener('keyup', function() {
-  if (this.value && !registering) {
-    toggleBtn(btnAddGrade)
+  if (this.value.length) {
+      if (inputGrade.value > 10 || inputGrade.value < 0) {
+      btnAddGrade.disabled = true
+     }
+     else {
+      btnAddGrade.disabled = false
+     }
   }
-  else if (!this.value) {
-    toggleBtn(btnAddGrade)
+  else {
+    btnAddGrade.dispatchEvent = true
   }
+
 })
 
 
 function toggleBtn(btn) {
-  btn.disabled = !btn.disabled
+   btn.disabled = !btn.disabled
+  if (!grades.length) {
+   btn.disabled = true
+  }
   if (btn.id == 'btnAddGrade') { registering = !registering 
   }
 }
@@ -68,7 +77,7 @@ function showGrades() {
 
 function addGrade(){
   let grade = getGrade()
-  if (grade) {
+  if (grade >= 0) {
     if (!divErr.classList.contains('toggle')) {
       divErr.classList.add('toggle')
       pErr.innerText = ''

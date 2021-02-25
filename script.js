@@ -33,8 +33,9 @@ inputGrade.addEventListener('keyup', function() {
      }
   }
   else {
-    btnAddGrade.dispatchEvent = true
+    btnAddGrade.disabled = true
   }
+ 
 
 })
 

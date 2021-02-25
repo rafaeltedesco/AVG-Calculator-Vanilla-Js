@@ -95,10 +95,16 @@ function showAvg() {
   divAvg.classList.remove('toggle')
   pAvg.innerHTML = `<strong>Sua média é: ${avg.toFixed(2)}</strong>`
   if (avg > 6) {
+    if (pAvg.classList.contains('red')) {
+      pAvg.classList.remove('red')
+    }
     pAvg.classList.add('blue')
     message = 'Aprovado!'
   }
   else {
+    if (pAvg.classList.contains('blue')) {
+      pAvg.classList.remove('blue')
+    }
     pAvg.classList.add('red')
     message = 'Reprovado!'
   }

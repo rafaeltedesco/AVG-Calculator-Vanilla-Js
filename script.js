@@ -104,7 +104,7 @@ function showAvg() {
   let message = ''
   divAvg.classList.remove('toggle')
   pAvg.innerHTML = `<strong>Sua média é: ${avg.toFixed(2)}</strong>`
-  if (avg > 6) {
+  if (avg >= 6) {
     if (pAvg.classList.contains('red')) {
       pAvg.classList.remove('red')
     }
